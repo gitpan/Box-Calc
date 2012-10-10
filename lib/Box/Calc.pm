@@ -1,6 +1,6 @@
 package Box::Calc;
 BEGIN {
-  $Box::Calc::VERSION = '0.0100';
+  $Box::Calc::VERSION = '0.0101';
 }
 
 use strict;
@@ -17,7 +17,7 @@ Box::Calc - Packing Algorithm
 
 =head1 VERSION
 
-version 0.0100
+version 0.0101
 
 =head1 SYNOPSIS
 
@@ -52,6 +52,48 @@ version 0.0100
 Box::Calc helps you determine what can fit into a box for shipping or storage purposes. It will try to use the smallest box possible of the box types. If every item won't fit into your largest box, then it will span the boxes letting you know how many boxes you'll need.
 
 Once it's done packing the boxes, you can get a packing list for each box, as well as the weight of each box.
+
+=head2 How The Algorithm Works
+
+Box::Calc is intended to pack boxes in the simplest way possible. Here's what it does:
+
+=over
+
+=item 1
+
+Sort all the items by volume.
+
+=item 2
+
+Eliminate all boxes that won't fit the largest items.
+
+=item 3
+
+Choose the smallest box still available.
+
+=item 4
+
+Place the items in a row starting with the largest items.
+
+=item 5
+
+When the row runs out of space, add another.
+
+=item 6
+
+When you run out of space to add rows, add a layer.
+
+=item 7
+
+When you run out of layers either start over with a bigger box, or if there are no bigger boxes span to a second box.
+
+=item 8
+
+Repeat from step 3 until all items are packed into boxes.
+
+=back
+
+=back
 
 =head2 Motivation
 

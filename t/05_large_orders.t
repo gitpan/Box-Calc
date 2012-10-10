@@ -32,10 +32,10 @@ foreach (1..558) {
 }
 
 note "Time to Execute: ".tv_interval($t);
-diag "Layer Count: ".$box->count_layers;
-diag "Fill X: ".$box->fill_x;
-diag "Fill Y: ".$box->fill_y;
-diag "Fill Z: ".$box->fill_z;
+note "Layer Count: ".$box->count_layers;
+note "Fill X: ".$box->fill_x;
+note "Fill Y: ".$box->fill_y;
+note "Fill Z: ".$box->fill_z;
 ok(1);
 
 done_testing;
