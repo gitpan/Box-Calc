@@ -1,6 +1,6 @@
 package Box::Calc::Row;
 BEGIN {
-  $Box::Calc::Row::VERSION = '0.0101';
+  $Box::Calc::Row::VERSION = '0.0200';
 }
 
 use strict;
@@ -14,7 +14,7 @@ Box::Calc::Row - The smallest organizational unit in a box.
 
 =head1 VERSION
 
-version 0.0101
+version 0.0200
 
 =head1 SYNOPSIS
 

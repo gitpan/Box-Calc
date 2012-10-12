@@ -45,6 +45,7 @@ cmp_deeply
     [
       {
         name => '8 cube',
+        weight => 13,
         packing_list => [
             [ [('small die')x2], [('small die')x2], ],
             [ [('small die')x2], [('small die')x1], ],
@@ -71,6 +72,7 @@ cmp_deeply
     [
       {
         name => '27 cube',
+        weight => 23,
         packing_list => [
             [ [('small die')x3], [('small die')x3], [('small die')x3], ],
             [ [('small die')x3], [('small die')x2], ],
@@ -99,6 +101,7 @@ cmp_deeply
     [
       {
         name => '27 cube',
+        weight => 36,
         packing_list => [  #3 items/row, 3 rows, 3 layers
             [ [('small die')x3], [('small die')x3], [('small die')x3], ],
             [ [('small die')x3], [('small die')x3], [('small die')x3], ],
@@ -107,6 +110,7 @@ cmp_deeply
       },
       {
         name => '27 cube',
+        weight => 10,
         packing_list => [  #28th item should be in here
             [ [('small die')x1],  ],
         ],

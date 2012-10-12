@@ -1,6 +1,6 @@
 package Box::Calc::Item;
 BEGIN {
-  $Box::Calc::Item::VERSION = '0.0101';
+  $Box::Calc::Item::VERSION = '0.0200';
 }
 
 use strict;
@@ -16,7 +16,7 @@ Box::Calc::Item - The container class for the items you wish to pack.
 
 =head1 VERSION
 
-version 0.0101
+version 0.0200
 
 =head1 SYNOPSIS
 

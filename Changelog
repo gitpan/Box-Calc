@@ -1,3 +1,8 @@
+version 0.0200 - October 11, 2012
+
+* Add the weight of each box to the packing_list output. 
+
+
 version 0.0101 - October 10, 2012 (10 minutes later)
 
 * Remove test diags and replace them with notes.

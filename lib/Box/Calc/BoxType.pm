@@ -1,6 +1,6 @@
 package Box::Calc::BoxType;
 BEGIN {
-  $Box::Calc::BoxType::VERSION = '0.0101';
+  $Box::Calc::BoxType::VERSION = '0.0200';
 }
 
 use strict;
@@ -15,7 +15,7 @@ Box::Calc::BoxType - The container class for the types (sizes) of boxes that can
 
 =head1 VERSION
 
-version 0.0101
+version 0.0200
 
 =head1 SYNOPSIS
 

@@ -1,6 +1,6 @@
 package Box::Calc::Layer;
 BEGIN {
-  $Box::Calc::Layer::VERSION = '0.0101';
+  $Box::Calc::Layer::VERSION = '0.0200';
 }
 
 use strict;
@@ -14,7 +14,7 @@ Box::Calc::Layer - A box is packed with multiple layers.
 
 =head1 VERSION
 
-version 0.0101
+version 0.0200
 
 =head1 SYNOPSIS
 

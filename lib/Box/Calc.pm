@@ -1,6 +1,6 @@
 package Box::Calc;
 BEGIN {
-  $Box::Calc::VERSION = '0.0101';
+  $Box::Calc::VERSION = '0.0200';
 }
 
 use strict;
@@ -17,7 +17,7 @@ Box::Calc - Packing Algorithm
 
 =head1 VERSION
 
-version 0.0101
+version 0.0200
 
 =head1 SYNOPSIS
 
@@ -404,6 +404,7 @@ Returns a data structure with all the item names packed into boxes. This can be 
  [
     {                                   # box one
         name            => "big box",
+        weight          => 94.5,
         packing_list    => [            # layer one
             [                           # row one
                 "soda",
@@ -427,6 +428,7 @@ sub packing_list {
     foreach my $box (@{$self->boxes}) {
         push @boxes, {
             name            => $box->name,
+            weight          => $box->calculate_weight,
             packing_list    => $box->packing_list,
         };
     }
