@@ -1,14 +1,11 @@
 package Box::Calc::Item;
 BEGIN {
-  $Box::Calc::Item::VERSION = '0.0200';
+  $Box::Calc::Item::VERSION = '0.0400';
 }
 
 use strict;
 use warnings;
 use Moose;
-
-with 'Box::Calc::Role::Dimensional';
-
 
 =head1 NAME
 
@@ -16,7 +13,7 @@ Box::Calc::Item - The container class for the items you wish to pack.
 
 =head1 VERSION
 
-version 0.0200
+version 0.0400
 
 =head1 SYNOPSIS
 
@@ -54,16 +51,45 @@ The weight of your item.
 
 The name of your item. If you're referring it back to an external system you may wish to use this field to store you item ids instead of item names.
 
-=back
+=item quantity
+
+Defaults to 1. The number of copies of this item that need to be packed.
 
 =back
 
-
-=head2 name
-
-Returns the name of this item.
+=back
 
 =cut
+
+has quantity => (
+    is          => 'ro',
+    default     => 1,
+    isa         => 'Num',
+);
+
+has x => (
+    is          => 'ro',
+    required    => 1,
+    isa         => 'Num',
+);
+
+has y => (
+    is          => 'ro',
+    required    => 1,
+    isa         => 'Num',
+);
+
+has z => (
+    is          => 'ro',
+    required    => 1,
+    isa         => 'Num',
+);
+
+has weight => (
+    is          => 'ro',
+    isa         => 'Num',
+    required    => 1,
+);
 
 has name => (
     is          => 'ro',
@@ -71,11 +97,6 @@ has name => (
     required    => 1,
 );
 
-=head1 ROLES
-
-This class installs L<Box::Calc::Role::Dimensional>.
-
-=cut
 
 no Moose;
 __PACKAGE__->meta->make_immutable;

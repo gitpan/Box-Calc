@@ -1,12 +1,11 @@
 package Box::Calc::BoxType;
 BEGIN {
-  $Box::Calc::BoxType::VERSION = '0.0200';
+  $Box::Calc::BoxType::VERSION = '0.0400';
 }
 
 use strict;
 use warnings;
 use Moose;
-with 'Box::Calc::Role::Dimensional';
 use Ouch;
 
 =head1 NAME
@@ -15,7 +14,7 @@ Box::Calc::BoxType - The container class for the types (sizes) of boxes that can
 
 =head1 VERSION
 
-version 0.0200
+version 0.0400
 
 =head1 SYNOPSIS
 
@@ -45,6 +44,10 @@ The length of your box.
 
 The thickness of your box.
 
+=item weight
+
+The weight of the empty box.
+
 =item name
 
 The name of your box.
@@ -60,10 +63,40 @@ Returns the name of this box.
 =cut
 
 
+has x => (
+    is          => 'ro',
+    required    => 1,
+    isa         => 'Num',
+);
+
+has y => (
+    is          => 'ro',
+    required    => 1,
+    isa         => 'Num',
+);
+
+has z => (
+    is          => 'ro',
+    required    => 1,
+    isa         => 'Num',
+);
+
+has weight => (
+    is          => 'ro',
+    isa         => 'Num',
+    required    => 1,
+);
+
 has name => (
     is          => 'ro',
     isa         => 'Str',
     required    => 1,
+);
+
+has categories => (
+    is          => 'ro',
+    isa         => 'ArrayRef',
+    default     => sub {[]},
 );
 
 no Moose;
