@@ -24,4 +24,4 @@ requires:
 resources:
   bugtracker: http://github.com/rizen/Box-Calc/issues
   repository: git://github.com/rizen/Box-Calc.git
-version: 0.0500
+version: 0.0501
