@@ -1,6 +1,6 @@
 package Box::Calc::BoxType;
 BEGIN {
-  $Box::Calc::BoxType::VERSION = '0.0400';
+  $Box::Calc::BoxType::VERSION = '0.0500';
 }
 
 use strict;
@@ -14,7 +14,7 @@ Box::Calc::BoxType - The container class for the types (sizes) of boxes that can
 
 =head1 VERSION
 
-version 0.0400
+version 0.0500
 
 =head1 SYNOPSIS
 
@@ -52,13 +52,14 @@ The weight of the empty box.
 
 The name of your box.
 
-=back
+=item compatible_services
+
+An array reference of shipping services this box is compatible with. See the complete list of services at L<http://api.boxcalc.net>. This is only necessary if you'r e using the C<shipping_options> method. 
 
 =back
 
-=head2 name
+=back
 
-Returns the name of this box.
 
 =cut
 
@@ -93,11 +94,12 @@ has name => (
     required    => 1,
 );
 
-has categories => (
+has compatible_services => (
     is          => 'ro',
     isa         => 'ArrayRef',
     default     => sub {[]},
 );
+
 
 no Moose;
 __PACKAGE__->meta->make_immutable;

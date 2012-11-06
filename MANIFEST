@@ -5,6 +5,7 @@ META.yml
 Makefile.PL
 README
 author.t/01_packing_list.t
+author.t/02_shipping_options.t
 dist.ini
 lib/Box/Calc.pm
 lib/Box/Calc/BoxType.pm

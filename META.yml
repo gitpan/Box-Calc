@@ -13,6 +13,9 @@ meta-spec:
   version: 1.4
 name: Box-Calc
 requires:
+  AnyEvent: 0
+  AnyEvent::HTTP::LWP::UserAgent: 0
+  JSON: 2.0
   Log::Any: 0
   Moose: 0
   Ouch: 0.0400
@@ -21,4 +24,4 @@ requires:
 resources:
   bugtracker: http://github.com/rizen/Box-Calc/issues
   repository: git://github.com/rizen/Box-Calc.git
-version: 0.0400
+version: 0.0500

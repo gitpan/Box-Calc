@@ -20,13 +20,16 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'Box::Calc',
   'PREREQ_PM' => {
+    'AnyEvent' => '0',
+    'AnyEvent::HTTP::LWP::UserAgent' => '0',
+    'JSON' => '2.0',
     'Log::Any' => '0',
     'Moose' => '0',
     'Ouch' => '0.0400',
     'Test::Deep' => '0',
     'Test::More' => '0'
   },
-  'VERSION' => '0.0400',
+  'VERSION' => '0.0500',
   'test' => {
     'TESTS' => 't/*.t'
   }
