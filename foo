@@ -1,0 +1,31 @@
+ok 1 - use Box::Calc;
+ok 2 - two box types
+ok 3 - 7 items to pack
+ok 4 - only one box was used
+ok 5 - smallest box was used
+not ok 6 - top-level packing instructions, 7 items
+#   Failed test 'top-level packing instructions, 7 items'
+#   at t/08_calc_spanning.t line 43.
+# Compared $data->[0]{"layers"}[0]{"fill_z"}
+#    got : '1'
+# expect : '1.0000'
+ok 7 - only one box was used
+ok 8 - largest box was used
+not ok 9 - top-level packing instructions, 14 items
+#   Failed test 'top-level packing instructions, 14 items'
+#   at t/08_calc_spanning.t line 175.
+# Compared $data->[0]{"fill_z"}
+#    got : '2.0000'
+# expect : '2'
+ok 10 - 28 items
+ok 11 - only one box was used
+ok 12 - used two boxes, both the largest
+not ok 13 - top-level packing instructions, 28 items
+#   Failed test 'top-level packing instructions, 28 items'
+#   at t/08_calc_spanning.t line 365.
+# Compared $data->[0]{"fill_z"}
+#    got : '3.0000'
+# expect : '3'
+ok 14 - top-level packing list, 28 items
+1..14
+# Looks like you failed 3 tests of 14.
