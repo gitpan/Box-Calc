@@ -1,5 +1,5 @@
 package Box::Calc::Box;
-$Box::Calc::Box::VERSION = '1.0000';
+$Box::Calc::Box::VERSION = '1.0001';
 use strict;
 use warnings;
 use Moose;
@@ -18,7 +18,7 @@ Box::Calc::Box - The container in which we pack items.
 
 =head1 VERSION
 
-version 1.0000
+version 1.0001
 
 =head1 SYNOPSIS
 
@@ -157,13 +157,13 @@ has void_weight => (
     lazy    => 1,
     default => sub {
         my $self = shift;
-        return $self->weight * 0.3;
+        return $self->weight * 0.7;
     }
 );
 
 =head2 calculate_weight()
 
-Calculates and returns the weight of all the layers in this box, including the weight of this box.
+Calculates and returns the weight of all the layers in this box, including the weight of this box and any packing filler (see L<void_weight>).
 
 =cut
 

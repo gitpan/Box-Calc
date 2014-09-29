@@ -1,5 +1,5 @@
 package Box::Calc::Role::Container;
-$Box::Calc::Role::Container::VERSION = '1.0000';
+$Box::Calc::Role::Container::VERSION = '1.0001';
 use strict;
 use warnings;
 use Moose::Role;
@@ -12,7 +12,7 @@ Box::Calc::Role::Container - Extends the L<Box::Calc::Role::Dimensional> role to
 
 =head1 VERSION
 
-version 1.0000
+version 1.0001
 
 =head1 METHODS
 

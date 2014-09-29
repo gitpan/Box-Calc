@@ -1,5 +1,5 @@
 package Box::Calc;
-$Box::Calc::VERSION = '1.0000';
+$Box::Calc::VERSION = '1.0001';
 use strict;
 use Moose;
 use Box::Calc::BoxType;
@@ -16,7 +16,7 @@ Box::Calc - Packing Algorithm
 
 =head1 VERSION
 
-version 1.0000
+version 1.0001
 
 =head1 SYNOPSIS
 
@@ -39,7 +39,7 @@ version 1.0000
  # how many boxes do you need
  my $box_count = $box_calc->count_boxes; # 2
  
- # interogate the boes
+ # interrogate the boxes
  my $box = $box_calc->get_box(-1); # the last box
  my $weight = $box->calculate_weight;
  
@@ -838,6 +838,7 @@ There are some additional optimizations that could be done to speed things up a 
 L<Moose>
 L<Ouch>
 L<Log::Any>
+L<Data::GUID>
 
 =head1 SUPPORT
 

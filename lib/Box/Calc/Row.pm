@@ -1,5 +1,5 @@
 package Box::Calc::Row;
-$Box::Calc::Row::VERSION = '1.0000';
+$Box::Calc::Row::VERSION = '1.0001';
 use strict;
 use Moose;
 use Box::Calc::Item;
@@ -12,7 +12,7 @@ Box::Calc::Row - The smallest organizational unit in a box.
 
 =head1 VERSION
 
-version 1.0000
+version 1.0001
 
 =head1 SYNOPSIS
 

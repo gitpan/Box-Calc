@@ -4,24 +4,25 @@ author:
   - 'JT Smith <jt@plainblack.com>'
 build_requires: {}
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  ExtUtils::MakeMaker: '6.30'
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.141170'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Box-Calc
 requires:
-  AnyEvent: 0
-  AnyEvent::HTTP::LWP::UserAgent: 0
-  JSON: 2.0
-  Log::Any: 0
-  Moose: 0
-  Ouch: 0.0400
-  Test::Deep: 0
-  Test::More: 0
+  AnyEvent: '0'
+  AnyEvent::HTTP::LWP::UserAgent: '0'
+  Data::GUID: '0'
+  JSON: '2.0'
+  Log::Any: '0'
+  Moose: '0'
+  Ouch: '0.0400'
+  Test::Deep: '0'
+  Test::More: '0'
 resources:
   bugtracker: http://github.com/rizen/Box-Calc/issues
   repository: git://github.com/rizen/Box-Calc.git
-version: 1.0000
+version: '1.0001'

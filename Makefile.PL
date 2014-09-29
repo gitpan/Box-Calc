@@ -22,6 +22,7 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "AnyEvent" => 0,
     "AnyEvent::HTTP::LWP::UserAgent" => 0,
+    "Data::GUID" => 0,
     "JSON" => "2.0",
     "Log::Any" => 0,
     "Moose" => 0,
@@ -29,7 +30,7 @@ my %WriteMakefileArgs = (
     "Test::Deep" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "1.0000",
+  "VERSION" => "1.0001",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -39,6 +40,7 @@ my %WriteMakefileArgs = (
 my %FallbackPrereqs = (
   "AnyEvent" => 0,
   "AnyEvent::HTTP::LWP::UserAgent" => 0,
+  "Data::GUID" => 0,
   "JSON" => "2.0",
   "Log::Any" => 0,
   "Moose" => 0,
